@@ -16,7 +16,7 @@ public class AnagramSolver{
 		//Output prompt for user		
 		System.out.println("\nInput anagram to be solved:\n");		
 		String strA = inScan.next();
-        System.out.println("---------------------------");
+        	System.out.println("---------------------------");
 		//Create a character array of the input string
 		char[] arrA = strA.toCharArray();
 		//Sort the characters alphabetically
@@ -34,7 +34,12 @@ public class AnagramSolver{
 				count++;	
 			}
 		}
-		System.out.println("\n"+count+" anagram(s) found.\n");
+        if(count==1){
+		    System.out.println("\n"+count+" anagram found.\n");
+        }
+        else{
+            System.out.println("\n"+count+" anagram(s) found.\n");
+        }
 
 	}
 
